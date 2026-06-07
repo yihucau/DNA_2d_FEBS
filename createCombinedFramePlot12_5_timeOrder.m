@@ -14,6 +14,7 @@ function createCombinedFramePlot12_5_timeOrder()
     %% ==================== 主函数 ====================
     % Load .mat file containing multiple frames
     [filename, pathname] = uigetfile('*.mat', 'Select .mat file containing frame data');
+    % This script should be run on the updated frame file generated in the previous processing step, with the filename format: area*_frames_updated.mat
     if isequal(filename, 0)
         fprintf('User cancelled file selection\n');
         return;
